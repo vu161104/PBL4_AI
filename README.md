@@ -1,4 +1,4 @@
-# 🔬 Phát Hiện Bệnh Võng Mạc Do Tiểu Đường
+#  Phát Hiện Bệnh Võng Mạc Do Tiểu Đường
 
 > Đồ án PBL4 – Trí Tuệ Nhân Tạo | Khoa Điện Tử - Viễn Thông | ĐH Bách Khoa Đà Nẵng
 
@@ -18,7 +18,7 @@ Hệ thống phân loại mức độ bệnh võng mạc tiểu đường (Diabe
 
 ---
 
-## 🗂️ Dataset
+##  Dataset
 
 | Dataset    |                     Images | Labels                  | Source                                                                                                  |
 | ---------- | -------------------------: | ----------------------- | ------------------------------------------------------------------------------------------------------- |
