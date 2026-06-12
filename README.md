@@ -18,13 +18,14 @@ Hệ thống phân loại mức độ bệnh võng mạc tiểu đường (Diabe
 
 ---
 
-##  Dataset
+## 🗂️ Dataset
 
-| Dataset    |                     Images | Labels                  | Source                                                                                                 |
-| ---------- | -------------------------: | ----------------------- | ------------------------------------------------------------------------------------------------------ |
-| APTOS 2019 |                      3,662 | DR Grade 0–4            | [Kaggle](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data)                       |
-| Messidor   |                      1,200 | DR Grade 0–3 + DME Risk | [Link]([https://www.adcis.net/en/third-party/messidor/](https://drive.google.com/drive/folders/1evSeDES4lfasbi93RrpF-20uiqIqNDH-?usp=sharing))                                     |
-| IDRiD      | 516 (413 Train / 103 Test) | DR Grade 0–4 + DME 0–2  | []([https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid](https://drive.google.com/drive/folders/1ytXP8LGo7Uq4za5cI-3a7qqxgMo9_9qb?usp=sharing)) |
+| Dataset    |                     Images | Labels                  | Source                                                                                                  |
+| ---------- | -------------------------: | ----------------------- | ------------------------------------------------------------------------------------------------------- |
+| APTOS 2019 |                      3,662 | DR Grade 0–4            | [Kaggle](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data)                        |
+| Messidor   |                      1,200 | DR Grade 0–3 + DME Risk | [Google Drive](https://drive.google.com/drive/folders/1evSeDES4lfasbi93RrpF-20uiqIqNDH-?usp=drive_link) |
+| IDRiD      | 516 (413 Train / 103 Test) | DR Grade 0–4 + DME 0–2  | [Google Drive](https://drive.google.com/drive/folders/1ytXP8LGo7Uq4za5cI-3a7qqxgMo9_9qb?usp=drive_link) |
+
 
 
 **Phân bố APTOS 2019:**
@@ -164,6 +165,6 @@ Kiến trúc attention-based cho bài toán multi-task DR + DME:
 
 ---
 
-## 📝 License
+##  License
 
 Dự án phục vụ mục đích học thuật — PBL4, Đại học Bách Khoa Đà Nẵng, 2026.
