@@ -8,7 +8,7 @@
 
 ---
 
-## 📋 Tổng Quan
+##  Tổng Quan
 
 Hệ thống phân loại mức độ bệnh võng mạc tiểu đường (Diabetic Retinopathy) từ ảnh đáy mắt (fundus) sử dụng các mô hình học sâu. Dự án huấn luyện và so sánh nhiều kiến trúc và chiến lược transfer learning trên các tập dữ liệu khác nhau.
 
@@ -18,13 +18,14 @@ Hệ thống phân loại mức độ bệnh võng mạc tiểu đường (Diabe
 
 ---
 
-## 🗂️ Tập Dữ Liệu
+##  Dataset
 
-| Tập dữ liệu | Số ảnh | Nhãn | Nguồn |
-|---|---|---|---|
-| APTOS 2019 | 3.662 | DR Grade 0–4 | Kaggle |
-| Messidor | 1.200 | DR Grade 0–3 + DME risk | Messidor Project |
-| IDRiD | 516 (413 train / 103 test) | DR Grade 0–4 + DME 0–2 | IEEE DataPort |
+| Dataset    |                     Images | Labels                  | Source                                                                                                 |
+| ---------- | -------------------------: | ----------------------- | ------------------------------------------------------------------------------------------------------ |
+| APTOS 2019 |                      3,662 | DR Grade 0–4            | [Kaggle](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data)                       |
+| Messidor   |                      1,200 | DR Grade 0–3 + DME Risk | [Link]([https://www.adcis.net/en/third-party/messidor/](https://drive.google.com/drive/folders/1evSeDES4lfasbi93RrpF-20uiqIqNDH-?usp=sharing))                                     |
+| IDRiD      | 516 (413 Train / 103 Test) | DR Grade 0–4 + DME 0–2  | []([https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid](https://drive.google.com/drive/folders/1ytXP8LGo7Uq4za5cI-3a7qqxgMo9_9qb?usp=sharing)) |
+
 
 **Phân bố APTOS 2019:**
 | Grade | Số lượng |
@@ -37,7 +38,7 @@ Hệ thống phân loại mức độ bệnh võng mạc tiểu đường (Diabe
 
 ---
 
-## 🏗️ Kiến Trúc Mô Hình
+##  Kiến Trúc Mô Hình
 
 ### Mô hình 1 — ResNet50 + Transfer Learning (APTOS 2019)
 
@@ -103,7 +104,7 @@ Kiến trúc attention-based cho bài toán multi-task DR + DME:
 
 ---
 
-## 📊 Kết Quả
+##  Kết Quả
 
 ### ResNet50 trên APTOS 2019
 
@@ -122,7 +123,7 @@ Kiến trúc attention-based cho bài toán multi-task DR + DME:
 
 ---
 
-## ⚙️ Tiền Xử Lý Dữ Liệu
+##  Tiền Xử Lý Dữ Liệu
 
 - Resize ảnh về **224×224** pixels
 - Chuẩn hóa bằng `preprocess_input` (ResNet mean ImageNet)
@@ -132,7 +133,7 @@ Kiến trúc attention-based cho bài toán multi-task DR + DME:
 
 ---
 
-## 🛠️ Công Nghệ Sử Dụng
+##  Công Nghệ Sử Dụng
 
 - **Framework:** TensorFlow / Keras, PyTorch
 - **Môi trường:** Google Colab (GPU)
@@ -141,7 +142,7 @@ Kiến trúc attention-based cho bài toán multi-task DR + DME:
 
 ---
 
-## 📁 Cấu Trúc Thư Mục
+##  Cấu Trúc Thư Mục
 
 ```
 ├── resnet50.ipynb                        # ResNet50 fine-tuning trên APTOS 2019 (1 nhãn)
@@ -153,27 +154,8 @@ Kiến trúc attention-based cho bài toán multi-task DR + DME:
 └── README.md
 ```
 
----
 
-## 🚀 Hướng Dẫn Chạy
-
-### 1. Cài đặt thư viện
-```bash
-pip install tensorflow torch torchvision scikit-learn pandas numpy matplotlib
-```
-
-### 2. Chuẩn bị dữ liệu
-Tải dữ liệu APTOS 2019 từ [Kaggle](https://www.kaggle.com/c/aptos2019-blindness-detection) và đặt vào thư mục `data/aptos2019/`.
-
-### 3. Huấn luyện mô hình
-```bash
-# Chạy trên Google Colab hoặc môi trường có GPU
-jupyter notebook notebooks/modelpbl4.ipynb
-```
-
----
-
-## 📚 Tài Liệu Tham Khảo
+##  Tài Liệu Tham Khảo
 
 1. He, K., Zhang, X., Ren, S., & Sun, J. (2016). *Deep Residual Learning for Image Recognition*. CVPR 2016.
 2. Li, X., et al. (2019). *CANet: Cross-Disease Attention Network for Joint Diabetic Retinopathy and Diabetic Macular Edema Grading*. IEEE TMI.
